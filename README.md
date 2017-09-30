@@ -13,6 +13,29 @@ Apollo-Thunk keeps the variables and fetch-policy paradigm of apollo while allow
 to interact with graphQL data in a more familiar Redux way and gives you full control over
 the structure of your Redux store. 
 
+# Setting Up
+
+Install package via NPM
+
+```javascript
+npm install apollo-thunk
+```
+
+Import apolloThunk in your project replace apollo middleware with apolloThunk passing the apollo-client
+as a parameter.
+
+```javascript
+import apolloThunk from 'apollo-thunk';
+
+  const store = creator(
+    rootReducer,
+    {},
+    compose(
+      applyMiddleware(apolloThunk(apolloClient))
+    )
+  );
+```
+
 # Using Queries
 Simply dispatch a normal Redux action and some reducers. Either import your query or write in inline.
 Pass in an optional fetch policy and your variables. Apollo-Thunk will do the rest!
@@ -30,7 +53,8 @@ export function getData(variables) {
 }
 ```
 
-```export default function reducer(state = initialState, action = {}) {
+```javascript
+    export default function reducer(state = initialState, action = {}) {
      switch (action.type) {
        case LOAD:
          return {
