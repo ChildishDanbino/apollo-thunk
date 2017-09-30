@@ -1,0 +1,26 @@
+{
+	"name": "apollo-thunk",
+	"version": "1.0.0",
+	"description": "Thunk Middleware for Apollo Client",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Daadler6/apollo-thunk"
+	},
+	"keywords": [
+		"react",
+		"reactmative",
+		"apollo",
+		"thunk",
+		"middleware"
+	],
+	"author": "Daniel Adler",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Daadler6/apollo-thunk/issues"
+	},
+	"homepage": "https://github.com/Daadler6/apollo-thunk"
+}
