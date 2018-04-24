@@ -38,7 +38,11 @@ import apolloThunk from 'apollo-thunk';
 
 # Using Queries
 Simply dispatch a normal Redux action and some reducers. Either import your query or write in inline.
-Pass in an optional fetch policy and your variables. Apollo-Thunk will do the rest!
+Pass in your variables and other additional options.
+
+See: https://www.apollographql.com/docs/react/api/react-apollo.html#graphql-query-options for a list of all query options. 
+
+Apollo-Thunk will do the rest!
 
 ```javascript
 export function getData(variables) {
